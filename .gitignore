@@ -1,0 +1,33 @@
+# build directories
+build/
+cmake-build-*/
+out/
+
+# cmake internal
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# compiler artifacts
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+
+# clang / tools cache
+.cache/
+
+# clangd (可选：建议保留)
+# compile_commands.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# custom project files
+project_tag_auth
+
+LICENSE
