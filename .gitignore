@@ -21,7 +21,7 @@ cmake_install.cmake
 .cache/
 
 # clangd (可选：建议保留)
-# compile_commands.json
+compile_commands.json
 
 # OS files
 .DS_Store
