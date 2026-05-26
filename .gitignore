@@ -28,6 +28,5 @@ compile_commands.json
 Thumbs.db
 
 # custom project files
-project_tag_auth
+#project_tag_auth
 
-LICENSE
