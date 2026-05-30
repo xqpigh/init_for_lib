@@ -1,13 +1,13 @@
 # init_for_lib/tests/test_hello/CMakeLists.txt
 
-add_executable(test_hello_app test_hello.cpp)
-set_target_properties(test_hello_app PROPERTIES OUTPUT_NAME test_hello)
-target_link_libraries(test_hello_app PRIVATE 
-    hello_lib
+add_executable(test_app_hello test_hello.cpp)
+set_target_properties(test_app_hello PROPERTIES OUTPUT_NAME test_hello)
+target_link_libraries(test_app_hello PRIVATE 
+    libhello
 )
-target_compile_options(test_hello_app PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_options(test_app_hello PRIVATE -Wall -Wextra -Wpedantic)
 
 add_test(
-    NAME test_hello_ctest
-    COMMAND $<TARGET_FILE:test_hello_app>
+    NAME ctest_test_hello
+    COMMAND $<TARGET_FILE:test_app_hello>
 )

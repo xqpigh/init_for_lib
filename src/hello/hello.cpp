@@ -1,6 +1,6 @@
 // init_for_lib/src/hello/hello.cpp
 
-#include "init_for_lib/hello/hello.hpp"
+#include "init_for_lib/hello/hello.h"
 
 #include <print>
 

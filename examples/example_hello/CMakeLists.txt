@@ -1,8 +1,8 @@
 # init_for_lib/examples/example_hello/CMakeLists.txt
 
-add_executable(example_hello_app example_hello.cpp)
-set_target_properties(example_hello_app PROPERTIES OUTPUT_NAME example_hello)
-target_link_libraries(example_hello_app PRIVATE 
-    hello_lib
+add_executable(example_app_hello example_hello.cpp)
+set_target_properties(example_ap_hello PROPERTIES OUTPUT_NAME example_hello)
+target_link_libraries(example_app_hello PRIVATE 
+    libhello
 )
-target_compile_options(example_hello_app PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_options(example_app_hello PRIVATE -Wall -Wextra -Wpedantic)
