@@ -35,25 +35,38 @@ tests/      manual test executables
 ## Build
 
 ```bash
-cmake -B build
+cmake -S . -B build -G Ninja && cmake --build build
+```
+
+## Examples
+
+Examples are disabled by default.
+
+Build:
+
+```bash
+cmake -S . -B build -DBUILD_EXAMPLES=ON
 cmake --build build
 ```
 
-Options (both `ON` by default):
-
-```bash
-cmake -B build -DBUILD_EXAMPLES=OFF -DBUILD_TESTS=OFF
-```
-
-## Run examples
+Run:
 
 ```bash
 ./build/bin/example_hello
 ```
 
-## Run tests
+## Tests
 
-Tests are simple executables, no testing framework required:
+Tests are disabled by default.
+
+Build:
+
+```bash
+cmake -S . -B build -DBUILD_TESTS=ON
+cmake --build build
+```
+
+Run:
 
 ```bash
 ./build/bin/test_hello
@@ -65,26 +78,31 @@ Or via CTest:
 ctest --test-dir build
 ```
 
----
-
 ## Usage (FetchContent)
 
 ```cmake
+# fetch content
 include(FetchContent)
 
 FetchContent_Declare(
     init_for_lib
     GIT_REPOSITORY https://github.com/xqpigh/init_for_lib.git
-    GIT_TAG        main
+    GIT_TAG origin/main
 )
 
 FetchContent_MakeAvailable(init_for_lib)
 
-target_link_libraries(app PRIVATE hello_lib)
+# ---- subdirectory ----
+
+# src/hello/CMakeLists.txt
+target_link_libraries(github_test4_hello PRIVATE init_for_lib_hello)
+
 ```
 
 ---
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
