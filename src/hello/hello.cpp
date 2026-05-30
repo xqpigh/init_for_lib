@@ -7,7 +7,7 @@
 namespace init_for_lib::hello {
 
 void Hello::test() {
-    std::println("This is Hello::test().");
+    std::println("This is Hello::test() as lib.");
 }
 
 }
