@@ -1,4 +1,4 @@
-# src/hello/CMakeLists.txt
+# init_for_lib/src/hello/CMakeLists.txt
 
 add_library(hello_lib STATIC hello.cpp)
 target_include_directories(hello_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)

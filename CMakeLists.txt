@@ -1,4 +1,4 @@
-# top CMakeLists.txt
+# init_for_lib/CMakeLists.txt
 
 cmake_minimum_required(VERSION 3.26)
 project(init_for_lib CXX)

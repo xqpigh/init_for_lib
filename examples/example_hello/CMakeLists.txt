@@ -1,4 +1,4 @@
-# examples/example_hello/CMakeLists.txt
+# init_for_lib/examples/example_hello/CMakeLists.txt
 
 add_executable(example_hello_app example_hello.cpp)
 set_target_properties(example_hello_app PROPERTIES OUTPUT_NAME example_hello)

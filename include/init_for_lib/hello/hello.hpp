@@ -1,4 +1,4 @@
-// hello.h
+// init_for_lib/include/init_for_lib/hello/hello.h
 
 #pragma once
 

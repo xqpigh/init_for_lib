@@ -1,4 +1,4 @@
-# tests/test_hello/CMakeLists.txt
+# init_for_lib/tests/test_hello/CMakeLists.txt
 
 add_executable(test_hello_app test_hello.cpp)
 set_target_properties(test_hello_app PROPERTIES OUTPUT_NAME test_hello)

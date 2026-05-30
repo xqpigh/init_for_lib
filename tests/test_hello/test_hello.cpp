@@ -1,6 +1,7 @@
-// tests/test_hello/test_hello.cpp
+// init_for_lib/tests/test_hello/test_hello.cpp
 
-#include "init_for_lib/hello/hello.h"
+#include "init_for_lib/hello/hello.hpp"
+
 #include <print>
 
 using init_for_lib::hello::Hello;

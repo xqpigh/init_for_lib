@@ -1,9 +1,7 @@
-// hello.cpp
+// init_for_lib/src/hello/hello.cpp
 
-// project
-#include "init_for_lib/hello/hello.h"
+#include "init_for_lib/hello/hello.hpp"
 
-// standart library
 #include <print>
 
 namespace init_for_lib::hello {
