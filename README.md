@@ -106,3 +106,4 @@ target_link_libraries(github_test4_hello PRIVATE init_for_lib_hello)
 This project is licensed under the MIT License.
 
 See the LICENSE file for details.
+
