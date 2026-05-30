@@ -93,6 +93,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(init_for_lib)
 
 # ---- subdirectory ----
+add_subdirectory(src)
 
 # src/hello/CMakeLists.txt
 target_link_libraries(github_test4_hello PRIVATE init_for_lib_hello)
